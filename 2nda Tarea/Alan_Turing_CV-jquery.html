@@ -1,0 +1,407 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alan Turing CV</title>
+<link href="../1era Tarea/AboutPageAssets/styles/aboutPageStyle.css" rel="stylesheet" type="text/css">
+	
+	  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+<!--Accordion for portfolio -->
+	<script>
+		$( function() {
+			$( "#accordion" ).accordion();
+		} );
+	</script>
+	
+	<!--Dialog Box for Pardon -->
+	 <script>
+  		$( function() {
+    		$( "#dialog" ).dialog();
+  		} );
+  	</script>
+	
+  <!--Color Toggler CSS -->
+	<script>
+  $( function() {
+    var state = true;
+    $( "#button" ).on( "click", function() {
+      if ( state ) {
+        $( "#effect" ).animate({
+          backgroundColor: "white",
+          color: "#fff",
+          width: 500
+        }, 1000 );
+      } else {
+        $( "#effect" ).animate({
+          backgroundColor: "#fff",
+          color: "#000",
+          width: 60
+        }, 1000 );
+      }
+      state = !state;
+    });
+  } );
+  </script>
+	
+	<!--Color Toggler HTML -->
+	<script>
+  $( function() {
+    var state = true;
+    $( "#button1" ).on( "click", function() {
+      if ( state ) {
+        $( "#effect1" ).animate({
+          backgroundColor: "white",
+          color: "#fff",
+          width: 500
+        }, 1000 );
+      } else {
+        $( "#effect1" ).animate({
+          backgroundColor: "#fff",
+          color: "#000",
+          width: 60
+        }, 1000 );
+      }
+      state = !state;
+    });
+  } );
+  </script>
+	
+	<!--Color Toggler Javascript -->
+	<script>
+  $( function() {
+    var state = true;
+    $( "#button2" ).on( "click", function() {
+      if ( state ) {
+        $( "#effect2" ).animate({
+          backgroundColor: "white",
+          color: "#fff",
+          width: 500
+        }, 1000 );
+      } else {
+        $( "#effect2" ).animate({
+          backgroundColor: "#fff",
+          color: "#000",
+          width: 60
+        }, 1000 );
+      }
+      state = !state;
+    });
+  } );
+  </script>
+
+	
+	<!--Color Toggler PHP -->
+	<script>
+  $( function() {
+    var state = true;
+    $( "#button3" ).on( "click", function() {
+      if ( state ) {
+        $( "#effect3" ).animate({
+          backgroundColor: "white",
+          color: "#fff",
+          width: 500
+        }, 1000 );
+      } else {
+        $( "#effect3" ).animate({
+          backgroundColor: "#fff",
+          color: "#000",
+          width: 60
+        }, 1000 );
+      }
+      state = !state;
+    });
+  } );
+  </script>
+	
+	<!--Toggle for Books  -->
+	<script>
+  $("#toggle").toggle("clip");
+</script>
+  
+		<!--Selectable -->
+	 <script>
+  $( function() {
+    $( "#selectable" ).selectable();
+  } );
+  </script>
+	
+	<style>
+div {
+  border: 1px solid white;
+  padding: 10px 10px 15px 15px;
+  background-color: white;
+}	
+		
+	/*Books Toggle*/
+#toggle {
+    display: none;
+}
+#toggle1 {
+    display: none;
+}
+#toggle2 {
+    display: none;
+}
+	/*Color Toggler*/	
+ .toggler { 
+	 width: 20px; 
+	 height: 40px
+	 background: white;
+		}
+    #button { padding: 0em 0em; text-decoration: none; }
+    #effect { width: 60px; height: 40px; padding: 0.0em; position: 		relative; background: white; }
+	#effect h3 { margin: 0; padding: 0.0em; text-align: right; 
+		} 
+		
+ .toggler { 
+	 width: 20px; 
+	 height: 40px
+	 background: white;
+		}
+    #button1 { padding: 0em 0em; text-decoration: none; }
+    #effect1 { width: 60px; height: 40px; padding: 0.0em; position: 		relative; background: white; }
+	#effect1 h3 { margin: 0; padding: 0.0em; text-align: right; 
+		}  		
+		
+ .toggler { 
+	 width: 20px; 
+	 height: 40px
+	 background: white;
+		}
+    #button2 { padding: 0em 0em; text-decoration: none; }
+    #effect2 { width: 60px; height: 40px; padding: 0.0em; position: 		relative; background: white; }
+	#effect2 h3 { margin: 0; padding: 0.0em; text-align: right; 
+		}
+		
+ .toggler { 
+	 width: 20px; 
+	 height: 40px
+	 background: white;
+		}
+    #button3 { padding: 0em 0em; text-decoration: none; }
+    #effect3 { width: 60px; height: 40px; padding: 0.0em; position: 		relative; background: white; }
+	#effect3 h3 { margin: 0; padding: 0.0em; text-align: right; 
+		} 
+		
+		/*Selectable*/
+#feedback { font-size: 1.4em; }
+  #selectable .ui-selecting { background: #FECA40; }
+  #selectable .ui-selected { background: #F39814; color: white; }
+  #selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+  #selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 38px; }
+		
+</style>
+	
+</head>
+
+<body>
+<header> 
+	
+  <!-- Identity details -->
+  <section class="profileHeader">
+    <h1>Alan Mathison Turing</h1>
+    <h3>Mathematician,Computer Scientist, Logician, Cryptanalyst</h3>
+	  
+	   
+		<div style="background-color: aliceblue" class="height:500px;" id="dialog" title="I have been pardoned!">
+  			<b>Computer pioneer and codebreaker Alan Turing has been given a posthumous royal pardon.</b>
+	  
+			<p>It addresses his 1952 conviction for gross indecency following which he was chemically castrated.</p>
+
+			<p>The conviction meant he lost his security clearance and had to stop the code-cracking work that had proved vital to the Allies in World War Two.</p>
+
+			<p>The pardon was granted under the Royal Prerogative of Mercy after a request by Justice Minister Chris Grayling.</p>
+		</div>
+	  
+    <hr>
+    <p>I am an English mathematician with a deep passion in theoretical computer cience. The algorithms I helped create are the cornerstone of general-purpose computer science. I like to be modest despite the fact that many people think of me as the father of artificial intelligence.&nbsp; &nbsp;</p>
+	  
+  </section>
+</header>
+	
+<section class="mainContent"> 
+  <section class="section1">
+    <h2 class="sectionTitle">Education</h2>
+    <hr class="sectionTitleRule">
+    <hr class="sectionTitleRule2">
+    <div class="section1Content">
+      <p><span>Highschool:</span> Hazelhurst Preparatory School</p>
+      <p><span>University:</span> King's College, Cambridge</p>
+	  <p><span>PhD:</span> Princeton</p>
+    </div>
+  </section>
+	 </section>
+	
+	<section class="mainContent"> 
+  <section class="section1">
+    <h2 class="sectionTitle">Programming Languages</h2>
+    <hr class="sectionTitleRule">
+    <hr class="sectionTitleRule2">
+    <div class="section1Content">
+
+ <div>
+ <button id="button1" class="ui-state-default ui-corner-all">HTML
+	 </button>
+		<div class="toggler">
+			<div id="effect1" class="ui-widget-content ui-corner-all">
+				<div class="container">
+  					<div class="skills html">
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+
+ <div>
+	<button id="button" class="ui-state-default ui-corner-all">CSS
+	</button>
+
+	<div class="toggler">
+		<div id="effect" class="ui-widget-content ui-corner-all">
+			<div  class="container">
+  				<div class="skills css">
+				</div>			
+			</div>
+		</div>
+		</div>
+	</div>
+		
+ <div>
+	<button id="button2" class="ui-state-default ui-corner-all">Javascript
+	</button>
+
+	<div class="toggler">
+		<div id="effect2" class="ui-widget-content ui-corner-all">
+			<div  class="container">
+  				<div class="skills js">
+				</div>			
+			</div>
+		</div>
+		</div>
+	</div>		
+
+ <div>
+	<button id="button3" class="ui-state-default ui-corner-all">PHP
+	</button>
+
+	<div class="toggler">
+		<div id="effect3" class="ui-widget-content ui-corner-all">
+			<div  class="container">
+  				<div class="skills php">
+				</div>			
+			</div>
+		</div>
+		</div>
+	</div>
+	  </div>		
+		</section>
+			</section>
+
+		
+<section class="section2">
+    <h2 class="sectionTitle">Portfolio</h2>
+    <hr class="sectionTitleRule">
+    <hr class="sectionTitleRule2">
+    <article class="section2Content">
+		
+    
+      
+    
+    </article>
+    <article class="section2Content">
+		
+		<div id="accordion">
+   <h2 class="sectionContentTitle"> 
+	Cracking the Enigma Machine -- (Read More)</h2>
+			
+  <div>
+	  <h3 class="sectionContentSubTitle">Year: 1943</h3>
+    <p>
+     <p class="sectionContent">&nbsp;Worked for the Government Code and Cypher School to aid Britain's efforts in cracking the interceped messages from the Nazi Party. My work is estimated to have shortened the war and save over 14 million human lives.&nbsp; </p>
+		<div class="profilePhoto"> 		  
+    <img height="90" src="../1era Tarea/Enigma-machine.jpg" alt="sample"> </div>
+    </p>
+  </div>
+  <h2 class="sectionContentTitle"> Turing Test -- (Read More)</h2>
+  <div>
+     <h3 class="sectionContentSubTitle">Year: 1950</h3>
+      <p class="sectionContent"> Created an imitation game to test a machine's ability to exhibit intelligent behavior. Sinceits introduction, the test has become widely influential in the concept of artificial intelligence philosophy. </p>
+		<img height="159" src="../1era Tarea/turing test.jpg" alt=" turing_test">
+  </div>
+ <h2 class="sectionContentTitle"> First Chess Computer Program -- (Read More)</h2>
+  <div>
+	  <h3 class="sectionContentSubTitle">Year: 1948</h3>
+    <p class="sectionContent">Worked with DG Cahmpernowne to write a computer program for the Ferranti Mark 1. </p>
+		<img height="168" src="../1era Tarea/chess.jpg" alt="sample">
+  </div>
+</div>    
+    </article>
+	 
+  </section>
+		<section class="mainContent"> 
+  <section class="section1">
+    <h2 class="sectionTitle">Hobbies</h2>
+    <hr class="sectionTitleRule">
+    <hr class="sectionTitleRule2">
+    <div class="section1Content">
+		
+		<ol id="selectable">
+  <li class="ui-widget-content">Reading</li>
+  <li class="ui-widget-content">Chess</li>
+  <li class="ui-widget-content">Logic</li>
+  <li class="ui-widget-content">Biology</li>
+</ol>
+    
+    </div>
+  </section>
+  <section class="section1">
+    <h2 class="sectionTitle">Favorite Books&nbsp;</h2>
+    <hr class="sectionTitleRule">
+    <hr class="sectionTitleRule2">
+    <div class="section1Content">
+<table style="width:100%">
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Review</th>
+  </tr>
+  <tr>
+    <td align="center">
+		<button onclick="$('#toggle').toggle('puff')">I, Robot</button>
+			<div align="center" id="toggle"><img height="100px" src="pictures/iRobot.jpg"></div>
+	  </td>
+    <td>Isaac Asimov</td>
+    <td>Regular</td>
+  </tr>
+  <tr>
+    <td align="center">
+		<button onclick="$('#toggle1').toggle('puff')">From the Earth to the Moon</button>
+		<div align="center" id="toggle1"><img height="100px" src="pictures/from_earth_to_the_moon.jpg"></div>
+	  </td>
+    <td>Jules Verne</td>
+    <td>Good</td>
+  </tr>
+	 <tr>
+   <td align="center">
+		<button onclick="$('#toggle2').toggle('puff')">The Art of War</button>
+		<div align="center" id="toggle2"><img height="100px" src="pictures/art_of_war.jpg"></div>
+	  </td>
+    <td>Sun Tzu</td>
+    <td>Corny</td>
+  </tr>
+</table>
+    </div>
+  </section>
+</section>
+<footer>
+  <hr>
+  <p class="footerDisclaimer">2020  Copyrights - <span>All Rights Reserved</span></p>
+  <p class="footerNote"><a href="https://twitter.com/turinginst?lang=es">Alan Turing - Please hire me </a></p>
+</footer>
+</body>
+</html>
